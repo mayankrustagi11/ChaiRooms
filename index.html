@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chai Rooms</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="side-nav">
+        <h2 class="abs-center nav-header">ChaiRooms</h2>
+        <ul class="abs-center nav-options">
+            <li class="rela-block nav-link"><a href="#" onclick="openModal();currentSlide(1)">Menu</a></li>
+            <li class="rela-block nav-link"><a href="#">Locations</a></li>
+            <li class="rela-block nav-link"><a href="#">About Us</a></li>
+            <li class="rela-block nav-link"><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="rela-block section top-section">
+        <div class="abs-center header-container">
+            <h1 class="abs-center food-header">Chai Rooms</h1>
+            <div class=" abs-center eye left"></div>
+            <div class=" abs-center eye right"></div>
+            <div class=" abs-center mouth"></div>
+            <div class="extra-lines"></div>
+            <div class="extra-lines bottom"></div>
+        </div>
+        <div class="nav-button top">
+            <div class="abs-center nav-bars"></div>
+        </div>
+    </div>
+
+    <div class="rela-block section words-section tea">
+        <div class="content-container">
+            <h2>Amazing Tastes</h2>
+            <p class="light">
+                Sriracha readymade 8-bit, offal selfies yuccie beard trust fund craft beer art party
+                tacos. Cliche food truck kickstarter, crucifix tofu kinfolk mlkshk artisan. Readymade post-ironic
+                freegan letterpress PBR&B 8-bit.
+            </p>
+        </div>
+    </div>
+
+    <div class="rela-block section words-section leaves right">
+        <div class="content-container">
+            <h2>Wholesome Ingredients</h2>
+            <p class="light">
+                Flannel health goth bushwick deep v. Kogi butcher pabst retro, street art small batch
+                craft beer typewriter. Pinterest semiotics selvage organic whatever, farm-to-table direct trade
+                intelligentsia health goth normcore biodiesel street art. Before they sold out narwhal bicycle
+                rights
+                hella, messenger bag banh mi tacos pickled tote bag ugh tofu.
+            </p>
+        </div>
+    </div>
+
+    <div class="rela-block section large-section">
+        <h1>Stuff Here</h1>
+
+        <div class="rela-inline option-square">
+            <div class="rela-block option-image"></div>
+            <h2>Test</h2>
+            <p class="light">
+                Some filler text to test out the style and make sure that all of that junk works out
+                correctly.
+            </p>
+        </div>
+
+        <div class="rela-inline option-square">
+            <div class="rela-block option-image"></div>
+            <h2>Test</h2>
+            <p class="light">
+                Some filler text to test out the style and make sure that all of that junk works out
+                correctly.
+            </p>
+        </div>
+
+        <div class="rela-inline option-square">
+            <div class="rela-block option-image"></div>
+            <h2>Test</h2>
+            <p class="light">
+                Some filler text to test out the style and make sure that all of that junk works out
+                correctly.
+            </p>
+        </div>
+
+        <div class="rela-inline option-square">
+            <div class="rela-block option-image"></div>
+            <h2>Test</h2>
+            <p class="light">
+                Some filler text to test out the style and make sure that all of that junk works out
+                correctly.
+            </p>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/img_nature.jpg" class="menu">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/img_snow.jpg" class="menu">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/img_mountains.jpg" class="menu">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/img_lights.jpg" class="menu">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+                <img class="menu demo cursor" src="img/img_nature.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="menu demo cursor" src="img/img_snow.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+                <img class="menu demo cursor" src="img/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)"
+                    alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="menu demo cursor" src="img/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+        </div>
+    </div>
+
+
+    <script src='js/jquery.js'></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
