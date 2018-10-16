@@ -32,7 +32,7 @@
 }
 
 body {
-	font-family: 'Open Sans';
+	font-family: 'Montserrat';
 	font-size: 18px;
 	letter-spacing: 0px;
 	font-weight: 400;
@@ -45,7 +45,6 @@ p.light {
 }
 
 h1 {
-	font-family: 'Raleway';
 	font-size: 54px;
 	letter-spacing: 10px;
 	font-weight: 200;
@@ -54,7 +53,6 @@ h1 {
 }
 
 h2 {
-	font-family: 'Montserrat';
 	font-size: 24px;
 	letter-spacing: 6px;
 	font-weight: 200;
@@ -107,7 +105,7 @@ h2 {
 
 .side-nav.nav-open {
 	height: 100vh;
-	width: 20vw;
+	width: 310px;
 	opacity: 1;
 	background-color: #f4f4f9;
 	box-shadow: 2px 4px 26px 2px rgba(0, 0, 0, 0.35);
@@ -480,10 +478,9 @@ h2 {
 
 .large-section {
 	min-height: 600px;
-	padding: 80px 40px 40px;
+	padding: 40px;
 	background-color: #ffdfd4;
 	text-align: center;
-	font-family: 'Open Sans';
 	font-size: 16px;
 	letter-spacing: 0px;
 	font-weight: 400;
@@ -527,26 +524,27 @@ h2 {
 
 /* The Modal (background) */
 .modal {
-	display: none;
+	background-color: rgba(0, 0, 0, 0.88);
 	position: fixed;
-	z-index: 1;
 	padding-top: 100px;
-	left: 0;
 	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: black;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	outline: 0;
 }
 
 /* Modal Content */
 .modal-content {
 	position: relative;
-	background-color: #fefefe;
 	margin: auto;
-	padding: 0;
 	width: 39%;
-	max-width: 1200px;
+	pointer-events: auto;
+	background-color: #fff;
+	outline: 0;
 }
 
 /* The Close Button */
@@ -555,8 +553,9 @@ h2 {
 	position: absolute;
 	top: 10px;
 	right: 25px;
-	font-size: 35px;
-	font-weight: bold;
+	font-size: 2rem;
+	font-weight: 700;
+	text-shadow: 0 1px 0 #fff;
 }
 
 .close:hover,
@@ -621,7 +620,8 @@ img.menu {
 
 .caption-container {
 	text-align: center;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.88);
+	;
 	padding: 2px 16px;
 	color: white;
 }
