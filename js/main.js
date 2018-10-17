@@ -2,9 +2,9 @@ $(document).ready(function () {
 
     // Menu Function
     $('.nav-button').click(() => {
-        $('.nav-button, .side-nav, .nav-header, .nav-options, #fullpage').toggleClass('nav-open');
-        return false;
+        $('.nav-button, .side-nav, .nav-header, .nav-options').toggleClass('nav-open');
     });
+
 
     $('#fullpage').fullpage({
         css3: true,
