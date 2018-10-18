@@ -448,26 +448,11 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.row>.column {
-	padding: 0 8px;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.column {
-	float: left;
-	width: 25%;
-}
-
 /* The Gallery (background) */
 .gallery {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.9);
 	position: fixed;
-	padding-top: 100px;
+	padding-top: 20px;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -482,7 +467,7 @@ h2 {
 .gallery-content {
 	position: relative;
 	margin: auto;
-	width: 39%;
+	width: 25%;
 	pointer-events: auto;
 	background: transparent;
 	outline: 0;
@@ -490,24 +475,37 @@ h2 {
 
 /* The Close Button */
 .exit {
-	color: white;
+	color: #fff;
 	position: absolute;
 	top: 10px;
 	right: 25px;
 	font-size: 2rem;
 	font-weight: 700;
 	text-shadow: 0 1px 0 #fff;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 0.2rem;
+	border-radius: 5px;
 }
 
 .exit:hover,
 .exit:focus {
-	color: #999;
-	text-decoration: none;
-	cursor: pointer;
+	color: #000;
+	background-color: #fff;
 }
+
 
 .mySlides {
 	display: none;
+}
+
+.row {
+	margin-top: 1rem;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
 }
 
 
@@ -517,25 +515,30 @@ h2 {
 	position: absolute;
 	top: 50%;
 	width: auto;
-	padding: 16px;
+	padding: 1rem;
 	margin-top: -50px;
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
 	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
 	user-select: none;
 	-webkit-user-select: none;
 }
 
+.prev {
+	left: -3rem;
+	border-radius: 5px 0 0 5px;
+}
+
 .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+	right: -3rem;
+	border-radius: 0 5px 5px 0;
 }
 
 .prev:hover,
 .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #fff;
+	color: #000;
 }
 
 .numbertext {
@@ -550,17 +553,6 @@ img.menu {
 	margin-bottom: -8px;
 	width: 100%;
 	height: auto;
-}
-
-#caption {
-	margin: 1rem;
-}
-
-.caption-container {
-	text-align: center;
-	background: transparent;
-	padding: 2px 16px;
-	color: white;
 }
 
 .demo {
@@ -591,7 +583,7 @@ img.menu.hover-shadow {
 	display: none;
 	overflow: hidden;
 	outline: 0;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.9);
 	padding-top: 100px;
 }
 
@@ -796,6 +788,11 @@ small {
 }
 
 @media screen and (max-width: 1200px) {
+	.gallery-content {
+		top: 2%;
+		width: 35%;
+	}
+
 	.section {
 		padding: 1rem;
 	}
@@ -815,9 +812,16 @@ small {
 	}
 }
 
+@media screen and (max-width: 992px) {
+	.gallery-content {
+		top: 5%;
+		width: 42%;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.gallery-content {
-		width: 80%;
+		width: 60%;
 	}
 
 	.words-section .content-container,
@@ -834,5 +838,11 @@ small {
 
 	.large-section h1 {
 		margin-top: 5rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.gallery-content {
+		width: 80%;
 	}
 }
