@@ -23,7 +23,7 @@
             <li class="rela-block nav-link"><a href="#" onclick="openModal();currentSlide(1)">Menu</a></li>
             <li class="rela-block nav-link"><a href="#">Locations</a></li>
             <li class="rela-block nav-link"><a href="#">About Us</a></li>
-            <li class="rela-block nav-link"><a href="#">Contact Us</a></li>
+            <li class="rela-block nav-link"><a href="#" class="contact-toggle">Contact Us</a></li>
         </ul>
     </div>
 
@@ -108,9 +108,10 @@
 
     </div>
 
-    <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
+    <!-- MENU GALLERY -->
+    <div id="Gallery" class="gallery">
+        <span class="exit" onclick="closeModal()">&times;</span>
+        <div class="gallery-content">
 
             <div class="mySlides">
                 <div class="numbertext">1 / 4</div>
@@ -139,7 +140,6 @@
                 <p id="caption"></p>
             </div>
 
-
             <div class="column">
                 <img class="menu demo cursor" src="img/img_nature.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
             </div>
@@ -152,6 +152,38 @@
             </div>
             <div class="column">
                 <img class="menu demo cursor" src="img/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Contact Us</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="https://formspree.io/mayank15csu114@ncuindia.edu" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="Name" placeholder="Enter Name">
+                            <small class="error" id="name-error"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="Email" placeholder="Enter Email">
+                            <small class="error" id="email-error"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" name="Message" placeholder="Enter Message"></textarea>
+                            <small class="error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
