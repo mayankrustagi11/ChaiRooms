@@ -810,6 +810,14 @@ small {
 		width: 35%;
 	}
 
+	.modal {
+		padding-top: 200px;
+	}
+
+	.modal-dialog {
+		margin: 0 1rem;
+	}
+
 	.section {
 		padding: 1rem;
 	}
