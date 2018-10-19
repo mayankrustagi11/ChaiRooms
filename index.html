@@ -42,8 +42,8 @@
         <ul class="abs-center nav-options">
             <li class="rela-block nav-link"><a href="#" onclick="openModal();currentSlide(1)">Menu</a></li>
             <li class="rela-block nav-link"><a href="#">Locations</a></li>
-            <li class="rela-block nav-link"><a href="#">About Us</a></li>
-            <li class="rela-block nav-link"><a href="#" class="contact-toggle">Contact Us</a></li>
+            <li class="rela-block nav-link"><a href="#" id="aboutModalToggle">About Us</a></li>
+            <li class="rela-block nav-link"><a href="#" id="contactModalToggle">Contact Us</a></li>
         </ul>
     </div>
 
@@ -90,38 +90,35 @@
             <h1>Stuff Here</h1>
 
             <div class="rela-inline option-square">
-                <div class="rela-block option-image"></div>
-                <h2>Test</h2>
+                <div class="rela-block option-image">
+                    <img src="img/tea/Masala Tea.jpg" alt="Masala Tea">
+                </div>
+                <h2>Masala Tea</h2>
                 <p class="light">
-                    Some filler text to test out the style and make sure that all of that junk works out
-                    correctly.
+                    Masala chai is a flavoured tea beverage made by brewing black tea with a mixture of aromatic Indian
+                    spices and herbs.
                 </p>
             </div>
 
             <div class="rela-inline option-square">
-                <div class="rela-block option-image"></div>
-                <h2>Test</h2>
+                <div class="rela-block option-image">
+                    <img src="img/tea/Black Tea.jpg" alt="Black Tea">
+                </div>
+                <h2>Black Tea</h2>
                 <p class="light">
-                    Some filler text to test out the style and make sure that all of that junk works out
-                    correctly.
+                    Black tea is more oxidized than oolong, green, and white teas. Black tea is stronger in
+                    flavour than the less oxidized teas.
                 </p>
             </div>
 
             <div class="rela-inline option-square">
-                <div class="rela-block option-image"></div>
-                <h2>Test</h2>
+                <div class="rela-block option-image">
+                    <img src="img/tea/Green Tea.jpg" alt="Green Tea">
+                </div>
+                <h2>Green Tea</h2>
                 <p class="light">
-                    Some filler text to test out the style and make sure that all of that junk works out
-                    correctly.
-                </p>
-            </div>
-
-            <div class="rela-inline option-square">
-                <div class="rela-block option-image"></div>
-                <h2>Test</h2>
-                <p class="light">
-                    Some filler text to test out the style and make sure that all of that junk works out
-                    correctly.
+                    Green tea is made from Camellia sinensis leaves that donot undergo the
+                    oxidation process used to make oolong teas and black teas.
                 </p>
             </div>
         </div>
@@ -166,12 +163,12 @@
     </div>
 
     <!-- CONTACT FORM -->
-    <div class="modal fade" role="dialog">
+    <div class="modal fade" id="contactModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title">Contact Us</h3>
-                    <span class="close">&times;</span>
+                    <span class="close" id="contactModalClose">&times;</span>
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="https://formspree.io/mayank15csu114@ncuindia.edu" id="contact-form">
@@ -197,6 +194,20 @@
         </div>
     </div>
 
+    <!-- ABOUT US -->
+    <div class="modal fade" id="aboutModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="aboutModalClose">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/mGoVMKWm4qk" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src='js/jquery.js'></script>
     <script src="js/easings.js"></script>

@@ -99,24 +99,43 @@ form.onsubmit = (e) => {
     form.submit();
 }
 
-var modal = document.querySelector('.modal');
-var button = document.querySelector(".contact-toggle");
-var close = document.querySelector(".close");
+var contactModal = document.querySelector('#contactModal');
+var contactModalButton = document.querySelector("#contactModalToggle");
+var contactModalClose = document.querySelector("#contactModalClose");
 
-button.onclick = () => {
+contactModalButton.onclick = () => {
     $('.nav-button').click();
     nameError.textContent = '';
     emailError.textContent = '';
     messageError.textContent = '';
-    modal.style.display = "block";
+    contactModal.style.display = "block";
 }
 
-close.onclick = () => {
-    modal.style.display = "none";
+contactModalClose.onclick = () => {
+    contactModal.style.display = "none";
 }
 
 window.onclick = (e) => {
-    if (e.target == modal) {
-        modal.style.display = "none";
+    if (e.target == contactModal) {
+        contactModal.style.display = "none";
+    }
+}
+
+var aboutModal = document.querySelector('#aboutModal');
+var aboutModalButton = document.querySelector("#aboutModalToggle");
+var aboutModalClose = document.querySelector("#aboutModalClose");
+
+aboutModalButton.onclick = () => {
+    $('.nav-button').click();
+    aboutModal.style.display = "block";
+}
+
+aboutModalClose.onclick = () => {
+    aboutModal.style.display = "none";
+}
+
+window.onclick = (e) => {
+    if (e.target == aboutModal) {
+        aboutModal.style.display = "none";
     }
 }

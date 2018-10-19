@@ -194,6 +194,10 @@ h2 {
 	color: #e0e5f5;
 	background-color: #272727;
 	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .header-container {
@@ -445,7 +449,11 @@ h2 {
 	height: 180px;
 	width: 180px;
 	margin: 10px auto 20px;
-	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.option-image>img {
+	width: 100%;
+	height: 100%;
 }
 
 /* The Gallery (background) */
@@ -778,6 +786,15 @@ textarea.form-control {
 small {
 	font-size: 80%;
 	font-weight: 400;
+}
+
+#aboutModal .modal-header {
+	padding: 0.5rem;
+	border-bottom: none;
+}
+
+#aboutModal .modal-body {
+	padding: 0;
 }
 
 @media (min-width: 992px) {
